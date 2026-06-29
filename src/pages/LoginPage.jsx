@@ -31,7 +31,7 @@ export default function LoginPage() {
     <div className="flex min-h-screen items-center justify-center bg-canvas px-4">
       <div className="w-full max-w-sm">
         <div className="mb-8 text-center">
-          <h1 className="font-display text-3xl font-medium text-ink">VHW EC Roster</h1>
+          <h1 className="font-display text-3xl font-medium text-ink">VHW EC Roster Builder</h1>
           <p className="mt-2 text-sm text-ink-muted">Sign in to view the shift schedule</p>
         </div>
 

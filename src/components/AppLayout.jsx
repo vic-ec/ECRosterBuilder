@@ -1,6 +1,6 @@
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
-import lilyIcon from '../assets/lily-icon.jpg'
+import lilyIcon from '../assets/lily-icon.png'
 
 const adminNav = [
   { to: '/', label: 'Dashboard', icon: HomeIcon },
@@ -36,7 +36,7 @@ export default function AppLayout() {
             <img
               src={lilyIcon}
               alt=""
-              className="h-8 w-8 rounded-md object-cover"
+              className="h-8 w-8 object-contain"
               draggable="false"
             />
             <h1 className="font-display text-lg font-medium text-ink">RotaCat</h1>

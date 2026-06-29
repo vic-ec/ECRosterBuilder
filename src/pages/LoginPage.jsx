@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
+import lily from '../assets/lily.jpg'
 
 export default function LoginPage() {
   const { signIn } = useAuth()
@@ -30,9 +31,19 @@ export default function LoginPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-canvas px-4">
       <div className="w-full max-w-sm">
+        <div className="mb-6 text-center">
+          <img
+            src={lily}
+            alt=""
+            className="mx-auto h-32 w-auto select-none"
+            draggable="false"
+          />
+        </div>
+
         <div className="mb-8 text-center">
-          <h1 className="font-display text-3xl font-medium text-ink">VHW EC Roster Builder</h1>
-          <p className="mt-2 text-sm text-ink-muted">Sign in to view the shift schedule</p>
+          <h1 className="font-display text-3xl font-medium text-ink">RotaCat</h1>
+          <p className="mt-1.5 text-sm font-medium text-accent-dark">the smarter play in EC rostering</p>
+          <p className="mt-3 text-sm text-ink-muted">Sign in to view the shift schedule</p>
         </div>
 
         <form onSubmit={handleSubmit} className="card p-6">

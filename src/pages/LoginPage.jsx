@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
-import lilyIcon from '../assets/lily-icon.png'
+import lily from '../assets/lily.jpg'
 
 export default function LoginPage() {
   const { signIn } = useAuth()
@@ -40,14 +40,11 @@ export default function LoginPage() {
           {/* Brand header */}
           <div className="mb-1 text-center">
             <img
-              src={lilyIcon}
+              src={lily}
               alt=""
-              className="mx-auto mb-3.5 h-16 w-16 select-none"
+              className="mx-auto mb-3 h-28 w-auto select-none"
               draggable="false"
             />
-            <p className="mb-1.5 font-mono text-[10.5px] font-medium uppercase tracking-[0.14em] text-rose">
-              EC Roster · Lily
-            </p>
             <h1 className="font-display text-3xl font-medium leading-none text-ink">
               RotaCat
             </h1>
